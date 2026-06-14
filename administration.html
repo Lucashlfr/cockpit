@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administration · 72h Aktionszentrale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <div class="sidebar__brand-logo">72h</div>
+        <div class="sidebar__brand-text">
+          <span class="sidebar__brand-title">Aktionszentrale</span>
+          <span class="sidebar__brand-sub">Koordinierungskreis</span>
+        </div>
+      </div>
+      <nav class="sidebar__nav">
+        <div class="sidebar__section">Arbeitsbereich</div>
+        <a href="index.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          Dashboard
+        </a>
+        <a href="einsatzboard.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16M15 4v16"/></svg>
+          Einsatzboard
+        </a>
+        <a href="vorgaenge.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          Vorgänge
+        </a>
+        <a href="bereiche.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg>
+          Bereiche
+        </a>
+        <a href="aktionsmappe.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h12l4 4v12a2 2 0 0 1-2 2H4z"/><path d="M14 4v6h6"/></svg>
+          Aktionsmappe
+        </a>
+        <div class="sidebar__section">Operativ</div>
+        <a href="lagezentrum.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="3"/></svg>
+          Lagezentrum
+        </a>
+        <div class="sidebar__section">System</div>
+        <a href="administration.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          Administration
+        </a>
+      </nav>
+      <div class="sidebar__footer">
+        Aktionsstart in <strong style="color:#fff">14 Tagen</strong><br>
+        28.–30. Juni 2026
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div>
+          <div class="topbar__crumbs">Aktionszentrale<span>›</span>Administration</div>
+          <div class="topbar__title">Administration</div>
+        </div>
+        <div class="topbar__search">
+          <input type="search" placeholder="Einstellungen durchsuchen …" />
+        </div>
+        <div class="topbar__actions">
+          <button class="topbar__icon-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+          </button>
+          <div class="user-chip">
+            <div class="user-chip__avatar">LM</div>
+            <div>
+              <div class="user-chip__name">Lena Maurer</div>
+              <div class="user-chip__role">Koordinationsleitung</div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <div class="page-header">
+          <div>
+            <div class="page-header__title">Administration</div>
+            <div class="page-header__subtitle">Stammdaten und Konfiguration des Tools</div>
+          </div>
+        </div>
+
+        <div class="admin-layout">
+          <!-- Admin-Navigation -->
+          <nav class="admin-nav">
+            <a class="admin-nav__item is-active" data-admin-target="benutzer">Benutzer</a>
+            <a class="admin-nav__item" data-admin-target="rollen">Rollen</a>
+            <a class="admin-nav__item" data-admin-target="vorgangstypen">Vorgangstypen</a>
+            <a class="admin-nav__item" data-admin-target="statuswerte">Statuswerte</a>
+            <a class="admin-nav__item" data-admin-target="prioritaeten">Prioritäten</a>
+            <a class="admin-nav__item" data-admin-target="labels">Labels</a>
+          </nav>
+
+          <!-- Panels -->
+          <div>
+            <!-- Benutzer -->
+            <div class="admin-panel" data-admin-panel="benutzer">
+              <div class="admin-panel__title">Benutzer</div>
+              <p class="admin-panel__sub">Personen mit Zugriff auf die 72h Aktionszentrale</p>
+              <div class="row row--between mb-4">
+                <input type="search" placeholder="Benutzer suchen …" style="height:34px; padding:0 12px; border:1px solid var(--color-border-strong); border-radius:8px; min-width:260px" />
+                <button class="btn btn--primary btn--sm">+ Benutzer einladen</button>
+              </div>
+              <div class="table-wrap">
+                <table class="table">
+                  <thead>
+                    <tr><th>Person</th><th>Rolle</th><th>Bereich</th><th>Status</th><th>Letzter Login</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="row" style="gap:10px"><span class="activity__avatar" style="background:#c0392b">LM</span> Lena Maurer</td>
+                      <td>Koordinationsleitung</td>
+                      <td>ORGA1</td>
+                      <td><span class="status status--green">Aktiv</span></td>
+                      <td>heute, 09:42</td>
+                    </tr>
+                    <tr>
+                      <td class="row" style="gap:10px"><span class="activity__avatar">JB</span> Jonas Becker</td>
+                      <td>Gruppenleitung</td>
+                      <td>KNTLS</td>
+                      <td><span class="status status--green">Aktiv</span></td>
+                      <td>heute, 09:01</td>
+                    </tr>
+                    <tr>
+                      <td class="row" style="gap:10px"><span class="activity__avatar">TK</span> Tim Kohler</td>
+                      <td>Gruppenleitung</td>
+                      <td>BELLH</td>
+                      <td><span class="status status--green">Aktiv</span></td>
+                      <td>gestern, 21:14</td>
+                    </tr>
+                    <tr>
+                      <td class="row" style="gap:10px"><span class="activity__avatar" style="background:#1f9d55">SR</span> Sebastian Roth</td>
+                      <td>Finanzen</td>
+                      <td>FINZ1</td>
+                      <td><span class="status status--green">Aktiv</span></td>
+                      <td>gestern, 17:40</td>
+                    </tr>
+                    <tr>
+                      <td class="row" style="gap:10px"><span class="activity__avatar">AP</span> Andreas Pohl</td>
+                      <td>Themenleitung</td>
+                      <td>MATE1</td>
+                      <td><span class="status status--green">Aktiv</span></td>
+                      <td>heute, 08:12</td>
+                    </tr>
+                    <tr>
+                      <td class="row" style="gap:10px"><span class="activity__avatar">MH</span> Marie Hofer</td>
+                      <td>Themenleitung</td>
+                      <td>PRES1</td>
+                      <td><span class="status status--green">Aktiv</span></td>
+                      <td>heute, 07:50</td>
+                    </tr>
+                    <tr>
+                      <td class="row" style="gap:10px"><span class="activity__avatar" style="background:#6c4abf">HE</span> Hannah Eichler</td>
+                      <td>Gruppenleitung</td>
+                      <td>JUKIR</td>
+                      <td><span class="status status--yellow">Eingeladen</span></td>
+                      <td>—</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Rollen -->
+            <div class="admin-panel" data-admin-panel="rollen" style="display:none">
+              <div class="admin-panel__title">Rollen</div>
+              <p class="admin-panel__sub">Berechtigungsstufen im Tool</p>
+              <div class="row row--between mb-4">
+                <span class="muted">6 Rollen definiert</span>
+                <button class="btn btn--primary btn--sm">+ Rolle anlegen</button>
+              </div>
+              <div class="table-wrap">
+                <table class="table">
+                  <thead>
+                    <tr><th>Name</th><th>Beschreibung</th><th>Bereich</th><th>Personen</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Koordinationsleitung</strong></td>
+                      <td>Voller Zugriff, kann Admin-Einstellungen ändern</td>
+                      <td>alle</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Themenleitung</strong></td>
+                      <td>Vollzugriff im eigenen Themenfeld</td>
+                      <td>Themenfeld</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Gruppenleitung</strong></td>
+                      <td>Vollzugriff in der eigenen Gruppe</td>
+                      <td>Teilnehmende Gruppe</td>
+                      <td>14</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Mitwirkende:r</strong></td>
+                      <td>Vorgänge bearbeiten, Aktionsmappe kommentieren</td>
+                      <td>zugewiesen</td>
+                      <td>43</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Beobachter:in</strong></td>
+                      <td>Nur lesender Zugriff</td>
+                      <td>zugewiesen</td>
+                      <td>11</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Hotline-Dienst</strong></td>
+                      <td>Lagezentrum + Check-ins bearbeiten</td>
+                      <td>operativ</td>
+                      <td>8</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Vorgangstypen -->
+            <div class="admin-panel" data-admin-panel="vorgangstypen" style="display:none">
+              <div class="admin-panel__title">Vorgangstypen</div>
+              <p class="admin-panel__sub">Welche Arten von Vorgängen existieren</p>
+              <div class="row row--between mb-4">
+                <span class="muted">5 Typen aktiv</span>
+                <button class="btn btn--primary btn--sm">+ Typ hinzufügen</button>
+              </div>
+              <div class="table-wrap">
+                <table class="table">
+                  <thead>
+                    <tr><th>Name</th><th>Symbol</th><th>Beschreibung</th><th>Verwendung</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Aufgabe</strong></td><td>📋</td>
+                      <td>Allgemeine Arbeitseinheit</td>
+                      <td>27</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Materialbedarf</strong></td><td>📦</td>
+                      <td>Beschaffung oder Bereitstellung von Material</td>
+                      <td>9</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Genehmigung</strong></td><td>📝</td>
+                      <td>Antrag oder behördliche Freigabe</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Rückfrage</strong></td><td>❓</td>
+                      <td>Klärung externer oder interner Fragen</td>
+                      <td>11</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Idee</strong></td><td>💡</td>
+                      <td>Vorschlag in frühem Stadium</td>
+                      <td>4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Statuswerte -->
+            <div class="admin-panel" data-admin-panel="statuswerte" style="display:none">
+              <div class="admin-panel__title">Statuswerte</div>
+              <p class="admin-panel__sub">Definierte Workflowzustände der Vorgänge</p>
+              <div class="row row--between mb-4">
+                <span class="muted">7 Statuswerte aktiv</span>
+                <button class="btn btn--primary btn--sm">+ Status hinzufügen</button>
+              </div>
+              <div class="table-wrap">
+                <table class="table">
+                  <thead>
+                    <tr><th>Status</th><th>Kategorie</th><th>Beschreibung</th><th>Anzahl</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><span class="status status--gray">Neu</span></td><td>Backlog</td><td>Frisch angelegter Vorgang</td><td>3</td></tr>
+                    <tr><td><span class="status status--yellow">In Prüfung</span></td><td>Klärung</td><td>Inhaltliche Bewertung läuft</td><td>2</td></tr>
+                    <tr><td><span class="status status--gray">Geplant</span></td><td>Vorbereitung</td><td>Eingeplant, noch nicht in Arbeit</td><td>3</td></tr>
+                    <tr><td><span class="status status--blue">In Arbeit</span></td><td>Aktiv</td><td>Wird gerade umgesetzt</td><td>5</td></tr>
+                    <tr><td><span class="status status--yellow">Wartet auf Rückmeldung</span></td><td>Warten</td><td>Externe oder interne Antwort offen</td><td>11</td></tr>
+                    <tr><td><span class="status status--red">Blockiert</span></td><td>Eskalation</td><td>Fortschritt durch Hindernis verhindert</td><td>4</td></tr>
+                    <tr><td><span class="status status--green">Erledigt</span></td><td>Fertig</td><td>Abgeschlossen, nichts mehr zu tun</td><td>19</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Prioritäten -->
+            <div class="admin-panel" data-admin-panel="prioritaeten" style="display:none">
+              <div class="admin-panel__title">Prioritäten</div>
+              <p class="admin-panel__sub">Dringlichkeitsstufen der Vorgänge</p>
+              <div class="table-wrap">
+                <table class="table">
+                  <thead><tr><th>Priorität</th><th>Beschreibung</th><th>Anzahl</th></tr></thead>
+                  <tbody>
+                    <tr><td><span class="priority priority--critical">Kritisch</span></td><td>Blockiert die Aktion oder gefährdet Termine</td><td>4</td></tr>
+                    <tr><td><span class="priority priority--high">Hoch</span></td><td>Sollte zeitnah erledigt werden</td><td>6</td></tr>
+                    <tr><td><span class="priority priority--normal">Normal</span></td><td>Standard für die meisten Vorgänge</td><td>28</td></tr>
+                    <tr><td><span class="priority priority--low">Niedrig</span></td><td>Kann zurückgestellt werden</td><td>9</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Labels -->
+            <div class="admin-panel" data-admin-panel="labels" style="display:none">
+              <div class="admin-panel__title">Labels</div>
+              <p class="admin-panel__sub">Freie Schlagworte für Vorgänge und Doku-Seiten</p>
+              <div class="row row--between mb-4">
+                <span class="muted">14 Labels in Verwendung</span>
+                <button class="btn btn--primary btn--sm">+ Label anlegen</button>
+              </div>
+              <div class="row row--wrap" style="gap:8px">
+                <span class="badge badge--blue">Holz</span>
+                <span class="badge badge--blue">Sponsor</span>
+                <span class="badge badge--blue">BAUTEC</span>
+                <span class="badge badge--purple">Projektidee</span>
+                <span class="badge badge--purple">Genehmigung</span>
+                <span class="badge badge--green">Material</span>
+                <span class="badge badge--green">Transport</span>
+                <span class="badge badge--yellow">Versicherung</span>
+                <span class="badge badge--yellow">Helfende</span>
+                <span class="badge badge--red">Eskalation</span>
+                <span class="badge">Presse</span>
+                <span class="badge">Social Media</span>
+                <span class="badge">Verpflegung</span>
+                <span class="badge">Aktionsfreitag</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

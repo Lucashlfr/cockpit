@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lagezentrum · 72h Aktionszentrale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    /* Lagezentrum – etwas dunklerer, cockpitartiger Touch */
+    .cockpit-hero {
+      background: linear-gradient(135deg, #1c2c46, #11192a);
+      color: #fff;
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      margin-bottom: var(--space-5);
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: var(--space-6);
+      align-items: center;
+    }
+    .cockpit-hero__title { font-size: 20px; font-weight: 600; margin-bottom: 4px; }
+    .cockpit-hero__sub { font-size: 13px; color: rgba(255,255,255,0.7); }
+    .cockpit-hero__stat-label {
+      font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em;
+      color: rgba(255,255,255,0.65);
+    }
+    .cockpit-hero__stat-value { font-size: 22px; font-weight: 600; margin-top: 2px; }
+    .cockpit-hero__pulse {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 12px; color: #ffd479; text-transform: uppercase; letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+    .pulse-dot {
+      width: 8px; height: 8px; border-radius: 50%; background: #ffd479;
+      box-shadow: 0 0 0 0 rgba(255, 212, 121, 0.7);
+      animation: pulse 1.6s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 212, 121, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 212, 121, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 212, 121, 0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <div class="sidebar__brand-logo">72h</div>
+        <div class="sidebar__brand-text">
+          <span class="sidebar__brand-title">Aktionszentrale</span>
+          <span class="sidebar__brand-sub">Koordinierungskreis</span>
+        </div>
+      </div>
+      <nav class="sidebar__nav">
+        <div class="sidebar__section">Arbeitsbereich</div>
+        <a href="index.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          Dashboard
+        </a>
+        <a href="einsatzboard.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16M15 4v16"/></svg>
+          Einsatzboard
+        </a>
+        <a href="vorgaenge.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          Vorgänge
+        </a>
+        <a href="bereiche.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg>
+          Bereiche
+        </a>
+        <a href="aktionsmappe.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h12l4 4v12a2 2 0 0 1-2 2H4z"/><path d="M14 4v6h6"/></svg>
+          Aktionsmappe
+        </a>
+        <div class="sidebar__section">Operativ</div>
+        <a href="lagezentrum.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="3"/></svg>
+          Lagezentrum
+        </a>
+        <div class="sidebar__section">System</div>
+        <a href="administration.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          Administration
+        </a>
+      </nav>
+      <div class="sidebar__footer">
+        Aktionsstart in <strong style="color:#fff">14 Tagen</strong><br>
+        28.–30. Juni 2026
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div>
+          <div class="topbar__crumbs">Aktionszentrale<span>›</span>Lagezentrum</div>
+          <div class="topbar__title">Lagezentrum</div>
+        </div>
+        <div class="topbar__search">
+          <input type="search" placeholder="Im Lagezentrum suchen …" />
+        </div>
+        <div class="topbar__actions">
+          <button class="topbar__icon-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+            <span class="topbar__dot"></span>
+          </button>
+          <div class="user-chip">
+            <div class="user-chip__avatar">LM</div>
+            <div>
+              <div class="user-chip__name">Lena Maurer</div>
+              <div class="user-chip__role">Einsatzleitung</div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="content content--wide">
+        <!-- Hero / Status -->
+        <div class="cockpit-hero">
+          <div>
+            <div class="cockpit-hero__pulse">
+              <span class="pulse-dot"></span> Aktion läuft · Stunde 21 von 72
+            </div>
+            <div class="cockpit-hero__title" style="margin-top:8px">Lagezentrum · 72h Aktion 2026</div>
+            <div class="cockpit-hero__sub">
+              Stand: Mo · 29.06.2026 · 14:07 Uhr · Einsatzleitung Lena Maurer
+            </div>
+          </div>
+          <div>
+            <div class="cockpit-hero__stat-label">Gruppen aktiv</div>
+            <div class="cockpit-hero__stat-value">12 / 14</div>
+          </div>
+          <div>
+            <div class="cockpit-hero__stat-label">Helfende vor Ort</div>
+            <div class="cockpit-hero__stat-value">287</div>
+          </div>
+          <div>
+            <div class="cockpit-hero__stat-label">Offene Eskalationen</div>
+            <div class="cockpit-hero__stat-value" style="color:#ff8c8c">3</div>
+          </div>
+        </div>
+
+        <!-- Gruppenstatus -->
+        <div class="card mb-5">
+          <div class="card__header">
+            <div class="card__title">Gruppenstatus</div>
+            <div class="row" style="gap:14px; font-size:12px; color:var(--color-text-muted)">
+              <span class="row" style="gap:6px"><span class="group-tile" style="width:10px; height:10px; padding:0; border:none; background:var(--color-green); border-radius:50%"></span>läuft</span>
+              <span class="row" style="gap:6px"><span style="width:10px; height:10px; background:var(--color-yellow); border-radius:50%; display:inline-block"></span>Rückfrage</span>
+              <span class="row" style="gap:6px"><span style="width:10px; height:10px; background:var(--color-red); border-radius:50%; display:inline-block"></span>kritisch</span>
+            </div>
+          </div>
+          <div class="card__body">
+            <div class="group-board">
+              <div class="group-tile group-tile--green">
+                <span class="group-tile__key">KNTLS</span>
+                <span class="group-tile__name">Messdiener Knittelsheim</span>
+                <span class="group-tile__sub">läuft · Aufbau Sitzgruppe planmäßig</span>
+              </div>
+              <div class="group-tile group-tile--yellow">
+                <span class="group-tile__key">BELLH</span>
+                <span class="group-tile__name">KjG Bellheim</span>
+                <span class="group-tile__sub">wartet auf Rückruf · Stadt Bellheim</span>
+              </div>
+              <div class="group-tile group-tile--red">
+                <span class="group-tile__key">JUKIR</span>
+                <span class="group-tile__name">Jugend Kirrweiler</span>
+                <span class="group-tile__sub">Materialproblem · Holzlieferung verspätet</span>
+              </div>
+              <div class="group-tile group-tile--green">
+                <span class="group-tile__key">MINIS</span>
+                <span class="group-tile__name">Ministranten Insheim</span>
+                <span class="group-tile__sub">läuft · Pflanzaktion Friedhof</span>
+              </div>
+              <div class="group-tile group-tile--yellow">
+                <span class="group-tile__key">PFADF</span>
+                <span class="group-tile__name">Pfadfinder Edenkoben</span>
+                <span class="group-tile__sub">Rückfrage Genehmigung Lagerfeuer</span>
+              </div>
+              <div class="group-tile group-tile--green">
+                <span class="group-tile__key">JUGSW</span>
+                <span class="group-tile__name">Jugendgruppe Schwegenheim</span>
+                <span class="group-tile__sub">läuft · Innenrenovierung Pfarrsaal</span>
+              </div>
+              <div class="group-tile group-tile--green">
+                <span class="group-tile__key">KJGZE</span>
+                <span class="group-tile__name">KjG Zeiskam</span>
+                <span class="group-tile__sub">läuft · Spielplatz im Plan</span>
+              </div>
+              <div class="group-tile group-tile--green">
+                <span class="group-tile__key">CVJMG</span>
+                <span class="group-tile__name">CVJM Germersheim</span>
+                <span class="group-tile__sub">läuft · Stadtteilgarten</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cockpit-Karten -->
+        <div class="cockpit-grid">
+          <!-- Kritische Lage -->
+          <div class="cockpit-card cockpit-card--red">
+            <div class="cockpit-card__header">
+              <span>Kritische Lage</span>
+              <span class="badge badge--red">3</span>
+            </div>
+            <div class="cockpit-card__body" data-autolink>
+              <div class="cockpit-row">
+                <span class="status status--red">Rot</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">JUKIR · Holzlieferung verspätet</div>
+                  <div class="cockpit-row__sub">Sponsor BAUTEC, ETA unklar · MATE1-4</div>
+                </div>
+              </div>
+              <div class="cockpit-row">
+                <span class="status status--red">Rot</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">Verletzung leichter Schnitt KNTLS-Helfer</div>
+                  <div class="cockpit-row__sub">Sanitäter vor Ort · 13:58</div>
+                </div>
+              </div>
+              <div class="cockpit-row">
+                <span class="status status--red">Rot</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">Stromausfall Lager Bellheim</div>
+                  <div class="cockpit-row__sub">Werkstatt aktuell nicht nutzbar · 12:40</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rückrufe erforderlich -->
+          <div class="cockpit-card cockpit-card--yellow">
+            <div class="cockpit-card__header">
+              <span>Rückrufe erforderlich</span>
+              <span class="badge badge--yellow">4</span>
+            </div>
+            <div class="cockpit-card__body">
+              <div class="cockpit-row">
+                <span class="status status--yellow">Gelb</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">Stadt Bellheim · Genehmigung</div>
+                  <div class="cockpit-row__sub">BELLH-5 · seit 11:20 offen</div>
+                </div>
+              </div>
+              <div class="cockpit-row">
+                <span class="status status--yellow">Gelb</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">Rheinpfalz · Bildanfrage</div>
+                  <div class="cockpit-row__sub">PRES1-2 · Rückruf bis 16:00</div>
+                </div>
+              </div>
+              <div class="cockpit-row">
+                <span class="status status--yellow">Gelb</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">Gärtnerei Schmitt</div>
+                  <div class="cockpit-row__sub">Pflanzenmenge KNTLS bestätigen</div>
+                </div>
+              </div>
+              <div class="cockpit-row">
+                <span class="status status--yellow">Gelb</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">DLRG Bellheim · Sanitätsdienst</div>
+                  <div class="cockpit-row__sub">Schichtwechsel Klärung</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Material unterwegs -->
+          <div class="cockpit-card cockpit-card--blue">
+            <div class="cockpit-card__header">
+              <span>Material unterwegs</span>
+              <span class="badge badge--blue">5</span>
+            </div>
+            <div class="cockpit-card__body">
+              <div class="cockpit-row">
+                <span class="badge badge--blue">→ KNTLS</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">Lärchenbretter (8 Stk.)</div>
+                  <div class="cockpit-row__sub">Transporter T2 · ETA 14:45</div>
+                </div>
+              </div>
+              <div class="cockpit-row">
+                <span class="badge badge--blue">→ BELLH</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">Farben &amp; Pinsel</div>
+                  <div class="cockpit-row__sub">Transporter T1 · ETA 15:10</div>
+                </div>
+              </div>
+              <div class="cockpit-row">
+                <span class="badge badge--blue">→ JUKIR</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">Ersatzholz Notbeschaffung</div>
+                  <div class="cockpit-row__sub">Privatfahrzeug Pohl · ETA 16:00</div>
+                </div>
+              </div>
+              <div class="cockpit-row">
+                <span class="badge badge--blue">→ MINIS</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">Pflanzerde &amp; Spaten</div>
+                  <div class="cockpit-row__sub">Transporter T2 · zurück 14:45</div>
+                </div>
+              </div>
+              <div class="cockpit-row">
+                <span class="badge badge--blue">→ Zentrale</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">Verpflegung Abendessen</div>
+                  <div class="cockpit-row__sub">VERP1 · Bäckerei Steinmann · 17:30</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pressechancen -->
+          <div class="cockpit-card cockpit-card--green">
+            <div class="cockpit-card__header">
+              <span>Pressechancen</span>
+              <span class="badge badge--green">3</span>
+            </div>
+            <div class="cockpit-card__body">
+              <div class="cockpit-row">
+                <span class="badge badge--green">14:30</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">Rheinpfalz · Fototermin KNTLS</div>
+                  <div class="cockpit-row__sub">Kirchplatz Knittelsheim</div>
+                </div>
+              </div>
+              <div class="cockpit-row">
+                <span class="badge badge--green">16:00</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">SWR aktuell · Live-Schaltung</div>
+                  <div class="cockpit-row__sub">Aktionszentrale Bellheim</div>
+                </div>
+              </div>
+              <div class="cockpit-row">
+                <span class="badge badge--green">19:00</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">Bürgermeister-Besuch BELLH</div>
+                  <div class="cockpit-row__sub">Marktplatz Bellheim · PRES1 informieren</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Letzte Check-ins -->
+          <div class="cockpit-card">
+            <div class="cockpit-card__header">
+              <span>Letzte Check-ins</span>
+              <span class="badge">live</span>
+            </div>
+            <div class="cockpit-card__body">
+              <div class="cockpit-row">
+                <span class="badge badge--blue">KNTLS</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">"Sitzbänke verleimt, Lasur startet 15 Uhr"</div>
+                  <div class="cockpit-row__sub">Jonas Becker · 13:42</div>
+                </div>
+              </div>
+              <div class="cockpit-row">
+                <span class="badge badge--blue">MINIS</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">"Friedhofspflege abgeschlossen, weiter zu Pflanzaktion"</div>
+                  <div class="cockpit-row__sub">Paul Reuter · 13:28</div>
+                </div>
+              </div>
+              <div class="cockpit-row">
+                <span class="badge badge--blue">CVJMG</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">"Garten zu 60 % bepflanzt"</div>
+                  <div class="cockpit-row__sub">Anna Klein · 13:10</div>
+                </div>
+              </div>
+              <div class="cockpit-row">
+                <span class="badge badge--blue">JUGSW</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">"Wandstreichen im Pfarrsaal abgeschlossen"</div>
+                  <div class="cockpit-row__sub">Felix Brand · 12:50</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hotline & Zentrale -->
+          <div class="cockpit-card">
+            <div class="cockpit-card__header">
+              <span>Hotline &amp; Zentrale</span>
+              <span class="badge">14:07</span>
+            </div>
+            <div class="cockpit-card__body">
+              <div class="cockpit-row">
+                <span class="badge">Schicht</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">Lena Maurer · Einsatzleitung</div>
+                  <div class="cockpit-row__sub">bis 18:00 · Wechsel auf Sebastian Roth</div>
+                </div>
+              </div>
+              <div class="cockpit-row">
+                <span class="badge">Hotline</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">Andreas Pohl · Material-Hotline</div>
+                  <div class="cockpit-row__sub">2 offene Tickets · Wartezeit < 2 min</div>
+                </div>
+              </div>
+              <div class="cockpit-row">
+                <span class="badge">Funk</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">Marie Hofer · Presse-Funk</div>
+                  <div class="cockpit-row__sub">Standby</div>
+                </div>
+              </div>
+              <div class="cockpit-row">
+                <span class="badge">Sani</span>
+                <div class="cockpit-row__main">
+                  <div class="cockpit-row__title">DLRG Bellheim · Rufbereitschaft</div>
+                  <div class="cockpit-row__sub">aktiv · 1 Einsatz heute</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

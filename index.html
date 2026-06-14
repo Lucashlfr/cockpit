@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard · 72h Aktionszentrale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- ===== Sidebar ===== -->
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <div class="sidebar__brand-logo">72h</div>
+        <div class="sidebar__brand-text">
+          <span class="sidebar__brand-title">Aktionszentrale</span>
+          <span class="sidebar__brand-sub">Koordinierungskreis</span>
+        </div>
+      </div>
+      <nav class="sidebar__nav">
+        <div class="sidebar__section">Arbeitsbereich</div>
+        <a href="index.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          Dashboard
+        </a>
+        <a href="einsatzboard.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16M15 4v16"/></svg>
+          Einsatzboard
+        </a>
+        <a href="vorgaenge.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          Vorgänge
+        </a>
+        <a href="bereiche.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg>
+          Bereiche
+        </a>
+        <a href="aktionsmappe.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h12l4 4v12a2 2 0 0 1-2 2H4z"/><path d="M14 4v6h6"/></svg>
+          Aktionsmappe
+        </a>
+        <div class="sidebar__section">Operativ</div>
+        <a href="lagezentrum.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="3"/></svg>
+          Lagezentrum
+        </a>
+        <div class="sidebar__section">System</div>
+        <a href="administration.html" class="sidebar__link">
+          <svg class="sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          Administration
+        </a>
+      </nav>
+      <div class="sidebar__footer">
+        Aktionsstart in <strong style="color:#fff">14 Tagen</strong><br>
+        28.–30. Juni 2026
+      </div>
+    </aside>
+
+    <!-- ===== Main ===== -->
+    <div class="main">
+      <header class="topbar">
+        <div>
+          <div class="topbar__crumbs">Aktionszentrale<span>›</span>Übersicht</div>
+          <div class="topbar__title">Dashboard</div>
+        </div>
+        <div class="topbar__search">
+          <input type="search" placeholder="Vorgänge, Bereiche, Personen suchen …" />
+        </div>
+        <div class="topbar__actions">
+          <button class="topbar__icon-btn" title="Benachrichtigungen">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+            <span class="topbar__dot"></span>
+          </button>
+          <div class="user-chip">
+            <div class="user-chip__avatar">LM</div>
+            <div>
+              <div class="user-chip__name">Lena Maurer</div>
+              <div class="user-chip__role">Koordinationsleitung</div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <div class="page-header">
+          <div>
+            <div class="page-header__title">Guten Morgen, Lena.</div>
+            <div class="page-header__subtitle">Hier ist der aktuelle Stand der 72h Aktion 2026.</div>
+          </div>
+          <div class="page-header__actions">
+            <button class="btn btn--secondary">Bericht exportieren</button>
+            <a href="vorgaenge.html" class="btn btn--primary">+ Neuer Vorgang</a>
+          </div>
+        </div>
+
+        <!-- KPI Cards -->
+        <div class="kpi-grid">
+          <div class="kpi kpi--critical">
+            <div class="kpi__label">Kritische Vorgänge</div>
+            <div class="kpi__value">4</div>
+            <div class="kpi__delta kpi__delta--up">+2 seit gestern</div>
+          </div>
+          <div class="kpi kpi--warn">
+            <div class="kpi__label">Wartet auf Rückmeldung</div>
+            <div class="kpi__value">11</div>
+            <div class="kpi__delta">5 davon &gt; 48 h</div>
+          </div>
+          <div class="kpi kpi--info">
+            <div class="kpi__label">Fällige Aufgaben (7 Tage)</div>
+            <div class="kpi__value">23</div>
+            <div class="kpi__delta">Spitze am 21.06.</div>
+          </div>
+          <div class="kpi kpi--warn">
+            <div class="kpi__label">Offene Materialbedarfe</div>
+            <div class="kpi__value">9</div>
+            <div class="kpi__delta">2 Großgeräte</div>
+          </div>
+          <div class="kpi kpi--critical">
+            <div class="kpi__label">Gruppen ohne Check-in</div>
+            <div class="kpi__value">3</div>
+            <div class="kpi__delta">letzter > 5 Tage</div>
+          </div>
+        </div>
+
+        <div class="dashboard-grid">
+          <!-- Hauptspalte -->
+          <div>
+            <!-- Aktuelle Lage -->
+            <div class="lage-card">
+              <div class="lage-card__eyebrow">Aktuelle Lage · Stand 09:42</div>
+              <h2 class="lage-card__title">Vorbereitung läuft planmäßig — drei Gruppen brauchen kurzfristig Klärung</h2>
+              <p class="lage-card__text">
+                12 von 14 teilnehmenden Gruppen haben ihre Projektidee final eingereicht.
+                Materialbeschaffung ist zu 78 % abgeschlossen. Engpass: Transporter-Verfügbarkeit
+                am Aktionsfreitag. Pressekontakt zur Rheinpfalz steht für Montag.
+              </p>
+              <div class="lage-card__stats">
+                <div>
+                  <div class="lage-card__stat-label">Teilnehmende Gruppen</div>
+                  <div class="lage-card__stat-value">14</div>
+                </div>
+                <div>
+                  <div class="lage-card__stat-label">Bereitschaft</div>
+                  <div class="lage-card__stat-value">78 %</div>
+                </div>
+                <div>
+                  <div class="lage-card__stat-label">Aktive Vorgänge</div>
+                  <div class="lage-card__stat-value">47</div>
+                </div>
+                <div>
+                  <div class="lage-card__stat-label">Helfende</div>
+                  <div class="lage-card__stat-value">312</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Offene Vorgänge -->
+            <div class="card">
+              <div class="card__header">
+                <div class="card__title">Wichtigste offene Vorgänge</div>
+                <a href="vorgaenge.html" class="btn btn--ghost btn--sm">Alle anzeigen →</a>
+              </div>
+              <ul class="list-clean" data-autolink>
+                <li>
+                  <a class="issue-key" href="vorgang-detail.html">KNTLS-2</a>
+                  <div class="list-clean__main">
+                    <div class="list-clean__title">Materialbedarf Holz klären</div>
+                    <div class="list-clean__sub">Messdiener Knittelsheim · Verantwortlich: Jonas Becker</div>
+                  </div>
+                  <span class="priority priority--critical">Kritisch</span>
+                  <span class="status status--red">Blockiert</span>
+                </li>
+                <li>
+                  <a class="issue-key" href="vorgang-detail.html">MATE1-4</a>
+                  <div class="list-clean__main">
+                    <div class="list-clean__title">Transporter-Verfügbarkeit prüfen</div>
+                    <div class="list-clean__sub">Material &amp; Logistik · Verantwortlich: Andreas Pohl</div>
+                  </div>
+                  <span class="priority priority--high">Hoch</span>
+                  <span class="status status--yellow">Wartet auf Rückmeldung</span>
+                </li>
+                <li>
+                  <a class="issue-key" href="vorgang-detail.html">ORGA1-3</a>
+                  <div class="list-clean__main">
+                    <div class="list-clean__title">Hotline-Schichten planen</div>
+                    <div class="list-clean__sub">Organisation · Verantwortlich: Lena Maurer</div>
+                  </div>
+                  <span class="priority priority--high">Hoch</span>
+                  <span class="status status--blue">In Arbeit</span>
+                </li>
+                <li>
+                  <a class="issue-key" href="vorgang-detail.html">PRES1-2</a>
+                  <div class="list-clean__main">
+                    <div class="list-clean__title">Pressemitteilung vorbereiten</div>
+                    <div class="list-clean__sub">Presse &amp; Kommunikation · Verantwortlich: Marie Hofer</div>
+                  </div>
+                  <span class="priority priority--normal">Normal</span>
+                  <span class="status status--blue">In Arbeit</span>
+                </li>
+                <li>
+                  <a class="issue-key" href="vorgang-detail.html">BELLH-5</a>
+                  <div class="list-clean__main">
+                    <div class="list-clean__title">Genehmigung Spielstraße Marktplatz</div>
+                    <div class="list-clean__sub">KjG Bellheim · Verantwortlich: Tim Kohler</div>
+                  </div>
+                  <span class="priority priority--critical">Kritisch</span>
+                  <span class="status status--yellow">In Prüfung</span>
+                </li>
+                <li>
+                  <a class="issue-key" href="vorgang-detail.html">FINZ1-1</a>
+                  <div class="list-clean__main">
+                    <div class="list-clean__title">Sponsoringzusagen formal bestätigen</div>
+                    <div class="list-clean__sub">Finanzen · Verantwortlich: Sebastian Roth</div>
+                  </div>
+                  <span class="priority priority--normal">Normal</span>
+                  <span class="status status--gray">Geplant</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Gruppenstatus mini -->
+            <div class="card mt-5">
+              <div class="card__header">
+                <div class="card__title">Gruppen ohne aktuellen Check-in</div>
+                <a href="lagezentrum.html" class="btn btn--ghost btn--sm">Lagezentrum →</a>
+              </div>
+              <div class="card__body">
+                <div class="group-board">
+                  <div class="group-tile group-tile--red">
+                    <span class="group-tile__key">JUKIR</span>
+                    <span class="group-tile__name">Jugend Kirrweiler</span>
+                    <span class="group-tile__sub">Letzter Check-in: vor 7 Tagen</span>
+                  </div>
+                  <div class="group-tile group-tile--red">
+                    <span class="group-tile__key">PFADF</span>
+                    <span class="group-tile__name">Pfadfinder Edenkoben</span>
+                    <span class="group-tile__sub">Letzter Check-in: vor 6 Tagen</span>
+                  </div>
+                  <div class="group-tile group-tile--yellow">
+                    <span class="group-tile__key">MINIS</span>
+                    <span class="group-tile__name">Ministrantengruppe Insheim</span>
+                    <span class="group-tile__sub">Letzter Check-in: vor 5 Tagen</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Seitenleiste -->
+          <aside>
+            <div class="card mb-5">
+              <div class="card__header">
+                <div class="card__title">Nächste Termine</div>
+              </div>
+              <div class="card__body">
+                <ul class="timeline">
+                  <li>
+                    <div class="timeline__title">Koordinationssitzung</div>
+                    <div class="timeline__sub">Mi · 17.06.2026 · 19:00 · Pfarrheim St. Martin</div>
+                  </li>
+                  <li>
+                    <div class="timeline__title">Materialannahme Sponsor BAUTEC</div>
+                    <div class="timeline__sub">Fr · 19.06.2026 · 14:00 · Lager Bellheim</div>
+                  </li>
+                  <li>
+                    <div class="timeline__title">Pressekonferenz</div>
+                    <div class="timeline__sub">Mo · 22.06.2026 · 11:00 · Rathaus</div>
+                  </li>
+                  <li>
+                    <div class="timeline__title">Briefing Gruppenleitungen</div>
+                    <div class="timeline__sub">Do · 25.06.2026 · 18:30 · Jugendhaus</div>
+                  </li>
+                  <li>
+                    <div class="timeline__title">Aktionsstart 72h</div>
+                    <div class="timeline__sub">So · 28.06.2026 · 17:07 Uhr</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__header">
+                <div class="card__title">Meilensteine</div>
+              </div>
+              <div class="card__body stack stack--sm">
+                <div class="row row--between">
+                  <span>Projektideen final</span>
+                  <span class="status status--green">12/14</span>
+                </div>
+                <div class="row row--between">
+                  <span>Material zugesagt</span>
+                  <span class="status status--yellow">78 %</span>
+                </div>
+                <div class="row row--between">
+                  <span>Genehmigungen</span>
+                  <span class="status status--yellow">9/11</span>
+                </div>
+                <div class="row row--between">
+                  <span>Versicherungen</span>
+                  <span class="status status--green">Erledigt</span>
+                </div>
+                <div class="row row--between">
+                  <span>Hotlinedienst</span>
+                  <span class="status status--red">Lücken</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
