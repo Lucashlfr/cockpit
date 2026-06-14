@@ -10,24 +10,24 @@ Gruppen, organisatorischen Themenfeldern, Vorgängen und Aktionsdokumentation.
 ## Mockup starten
 
 Es werden **keine** Build-Tools oder Abhängigkeiten benötigt. Einfach
-`index.html` im Browser öffnen:
+`mockup/index.html` im Browser öffnen:
 
 ```bash
 # macOS
-open index.html
+open mockup/index.html
 
 # Linux
-xdg-open index.html
+xdg-open mockup/index.html
 
 # Windows
-start index.html
+start mockup/index.html
 ```
 
 Alternativ ein kleiner lokaler Webserver, z. B.:
 
 ```bash
 python3 -m http.server 8080
-# dann http://localhost:8080 öffnen
+# dann http://localhost:8080/mockup/ öffnen
 ```
 
 ## Module / Seiten
@@ -49,22 +49,24 @@ python3 -m http.server 8080
 
 ```text
 /
-├── index.html
-├── einsatzboard.html
-├── vorgaenge.html
-├── vorgang-detail.html
-├── bereiche.html
-├── bereich-detail.html
-├── aktionsmappe.html
-├── aktionsmappe-seite.html
-├── lagezentrum.html
-├── administration.html
 ├── README.md
-└── assets/
-    ├── css/
-    │   └── styles.css
-    └── js/
-        └── app.js
+├── CLAUDE.md
+└── mockup/
+    ├── index.html
+    ├── einsatzboard.html
+    ├── vorgaenge.html
+    ├── vorgang-detail.html
+    ├── bereiche.html
+    ├── bereich-detail.html
+    ├── aktionsmappe.html
+    ├── aktionsmappe-seite.html
+    ├── lagezentrum.html
+    ├── administration.html
+    └── assets/
+        ├── css/
+        │   └── styles.css
+        └── js/
+            └── app.js
 ```
 
 ## Begriffsmodell

@@ -15,7 +15,7 @@ diskutierbar zu machen — nicht um produktive Funktionen.
 ## Harte Regeln (nicht abweichen)
 
 - **Keine Frameworks, keine Build-Tools.** Nur HTML, CSS und Vanilla JS.
-  Alles muss durch direktes Öffnen von `index.html` lokal funktionieren.
+  Alles muss durch direktes Öffnen von `mockup/index.html` lokal funktionieren.
 - **Keine externen Abhängigkeiten** außer der Google-Font Inter via CDN.
   Wenn neue Funktionalität externe Libraries verlangt, **nicht einbauen** —
   vorher mit dem User abklären.
@@ -62,12 +62,13 @@ Beispielbereiche, die in den Dummy-Daten konsistent verwendet werden:
 
 ```
 /
-├── *.html              (10 Seiten, jeweils vollständig & eigenständig)
-├── assets/
-│   ├── css/styles.css  (zentrales Designsystem)
-│   └── js/app.js       (Mockup-Interaktionen)
 ├── README.md
-└── CLAUDE.md
+├── CLAUDE.md
+└── mockup/
+    ├── *.html              (10 Seiten, jeweils vollständig & eigenständig)
+    └── assets/
+        ├── css/styles.css  (zentrales Designsystem)
+        └── js/app.js       (Mockup-Interaktionen)
 ```
 
 ## Designsystem
@@ -144,9 +145,9 @@ alles wird in `DOMContentLoaded` initialisiert.
 ## Starten
 
 ```bash
-open index.html          # macOS — reicht für das Mockup
+open mockup/index.html   # macOS — reicht für das Mockup
 # oder
-python3 -m http.server 8080
+python3 -m http.server 8080   # dann http://localhost:8080/mockup/
 ```
 
 Kein Test-Setup, keine Lints, keine CI.
